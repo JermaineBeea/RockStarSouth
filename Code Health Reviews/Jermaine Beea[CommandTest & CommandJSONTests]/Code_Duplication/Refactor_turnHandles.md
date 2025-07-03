@@ -11,6 +11,53 @@
 
 ---
 
+## **Before Refactoring**
+```java
+@Test
+public void testHandleTurnLeft() {
+    String clientId = "client-xyz";
+    Robot robot1 = new Robot("Alpha", "tank");
+    World world = new World(10, 10);
+    LaunchCommand command = new LaunchCommand(robot1, new String[]{"tank"});
+
+    world.execute(command, clientId, response -> {
+        assertTrue(response.isOKResponse());
+        Robot launchedRobot = world.getRobots().getFirst();
+
+        TurnCommand turnCommand = new TurnCommand(launchedRobot, new String[]{"left"});
+
+        world.execute(turnCommand, clientId, turnResponse -> {
+            assertTrue(turnResponse.isOKResponse());
+            assertEquals("Alpha turned left to WEST", turnResponse.getMessage());
+            assertEquals("WEST", turnResponse.object.getJSONObject("state").getString("direction"));
+        });
+    });
+}
+
+@Test
+public void testHandleTurnRight() {
+    String clientId = "client-xyz";
+    Robot robot1 = new Robot("Alpha", "tank");
+    World world = new World(10, 10);
+    LaunchCommand command = new LaunchCommand(robot1, new String[]{"tank"});
+
+    world.execute(command, clientId, response -> {
+        assertTrue(response.isOKResponse());
+        Robot launchedRobot = world.getRobots().getFirst();
+
+        TurnCommand turnCommand = new TurnCommand(launchedRobot, new String[]{"right"});
+
+        world.execute(turnCommand, clientId, turnResponse -> {
+            assertTrue(turnResponse.isOKResponse());
+            assertEquals("Alpha turned right to EAST", turnResponse.getMessage());
+            assertEquals("EAST", turnResponse.object.getJSONObject("state").getString("direction"));
+        });
+    });
+}
+```
+---
+
+
 ## Refactoring Strategy
 
 ### **Step 1: Extract Common Setup Logic**
@@ -111,48 +158,3 @@ public void testTurnDirection(String direction, String expectedDirection, String
 - Reduces maintenance burden
 - Improves test coverage consistency
 
-## **Before Refactoring**
-```java
-@Test
-public void testHandleTurnLeft() {
-    String clientId = "client-xyz";
-    Robot robot1 = new Robot("Alpha", "tank");
-    World world = new World(10, 10);
-    LaunchCommand command = new LaunchCommand(robot1, new String[]{"tank"});
-
-    world.execute(command, clientId, response -> {
-        assertTrue(response.isOKResponse());
-        Robot launchedRobot = world.getRobots().getFirst();
-
-        TurnCommand turnCommand = new TurnCommand(launchedRobot, new String[]{"left"});
-
-        world.execute(turnCommand, clientId, turnResponse -> {
-            assertTrue(turnResponse.isOKResponse());
-            assertEquals("Alpha turned left to WEST", turnResponse.getMessage());
-            assertEquals("WEST", turnResponse.object.getJSONObject("state").getString("direction"));
-        });
-    });
-}
-
-@Test
-public void testHandleTurnRight() {
-    String clientId = "client-xyz";
-    Robot robot1 = new Robot("Alpha", "tank");
-    World world = new World(10, 10);
-    LaunchCommand command = new LaunchCommand(robot1, new String[]{"tank"});
-
-    world.execute(command, clientId, response -> {
-        assertTrue(response.isOKResponse());
-        Robot launchedRobot = world.getRobots().getFirst();
-
-        TurnCommand turnCommand = new TurnCommand(launchedRobot, new String[]{"right"});
-
-        world.execute(turnCommand, clientId, turnResponse -> {
-            assertTrue(turnResponse.isOKResponse());
-            assertEquals("Alpha turned right to EAST", turnResponse.getMessage());
-            assertEquals("EAST", turnResponse.object.getJSONObject("state").getString("direction"));
-        });
-    });
-}
-```
----
