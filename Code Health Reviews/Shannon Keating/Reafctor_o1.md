@@ -31,6 +31,11 @@ public String displayDirectionalCross(Robot robot, int maxDistance) {
 }
 ```
 
+### **Alternative Approach: [Optional Alternative, e.g., Parameterized Tests]**
+```java
+[Insert alternative code structure or pseudocode here]
+```
+
 ---
 
 ## **Benefits of Refactoring**
