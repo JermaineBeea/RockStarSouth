@@ -82,7 +82,7 @@ public static Command fromInput(String input, String robotName) {
 
 ```java
 public static Command fromInput(String input, String robotName) {
-    //TODO: Impkement refactoring.
+    //TODO: Implement refactoring.
 }
 
 ```
