@@ -1,6 +1,6 @@
 # Code Refactoring Analysis
 
-## **Hotspot #4: Complex Method in `fromInput`**
+## **Hotspot: Complex Method in `fromInput`**
 - **Issue:** High cyclomatic complexity (cc = 22)
 - **Severity:** Brain Method - Complex Method - Long Method
 - **Problems:**
