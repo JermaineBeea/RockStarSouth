@@ -89,6 +89,28 @@ public void testTurnDirection(String direction, String expectedDirection, String
 
 ---
 
+## **Benefits of Refactoring**
+
+### **Maintainability**
+- Single point of change for test logic modifications
+- Easier to add new direction test cases
+- Reduced risk of inconsistencies between similar tests
+
+### **Readability**
+- Clear separation between test data and test logic
+- Self-documenting test method names
+- Parameterized approach makes test intentions obvious
+
+### **Extensibility**
+- Easy to add additional turn directions (e.g., "up", "down" for 3D movement)
+- Simple to modify expected behavior across all turn tests
+- Supports data-driven testing approaches
+
+### **Code Quality**
+- Eliminates duplicate code (DRY principle)
+- Reduces maintenance burden
+- Improves test coverage consistency
+
 ## **Before Refactoring**
 ```java
 @Test
@@ -133,27 +155,4 @@ public void testHandleTurnRight() {
     });
 }
 ```
-
 ---
-
-## **Benefits of Refactoring**
-
-### **Maintainability**
-- Single point of change for test logic modifications
-- Easier to add new direction test cases
-- Reduced risk of inconsistencies between similar tests
-
-### **Readability**
-- Clear separation between test data and test logic
-- Self-documenting test method names
-- Parameterized approach makes test intentions obvious
-
-### **Extensibility**
-- Easy to add additional turn directions (e.g., "up", "down" for 3D movement)
-- Simple to modify expected behavior across all turn tests
-- Supports data-driven testing approaches
-
-### **Code Quality**
-- Eliminates duplicate code (DRY principle)
-- Reduces maintenance burden
-- Improves test coverage consistency
