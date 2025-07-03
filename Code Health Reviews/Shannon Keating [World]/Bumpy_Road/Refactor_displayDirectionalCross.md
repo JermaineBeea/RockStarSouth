@@ -11,54 +11,6 @@
 
 ---
 
-## Refactoring Strategy
-
-### **Step 1: Identify and Extract Responsibilities**
-- Separate grid initialization, cross drawing, obstacle placement, robot placement, and output formatting into distinct helper methods
-- Each helper should encapsulate a single responsibility, reducing nesting and improving readability
-
-### **Step 2: Replace Nested Conditionals with Guard Clauses**
-- Use guard clauses to handle out-of-bounds and irrelevant cases early
-- Flatten the structure to make the main logic more linear and understandable
-
----
-
-## Refactored Code
-
-```java
-public String displayDirectionalCross(Robot robot, int maxDistance) {
-    //TODO: Write refactored code.
-}
-```
-
-### **Alternative Approach: [Optional Alternative, e.g., Parameterized Tests]**
-```java
-[Insert alternative code structure or pseudocode here]
-```
-
----
-
-## **Benefits of Refactoring**
-
-### **Maintainability**
-- Each logical step is encapsulated in a well-named helper method
-- Changes to grid, cross, or placement logic are isolated and easier to test
-
-### **Readability**
-- Linear, top-down flow in the main function
-- Reduced cognitive load from deep nesting and repeated index calculations
-
-### **Extensibility**
-- Easy to add new features (e.g., diagonal lines, new symbols) by extending or adding helpers
-- Supports future refactoring and testing
-
-### **Code Quality**
-- Eliminates "Bumpy Road" anti-pattern
-- Follows Single Responsibility Principle
-- Reduces risk of feature entanglement and state management bugs
-
----
-
 ## **Before Refactoring**
 ```java
 public String displayDirectionalCross(Robot robot, int maxDistance) {
@@ -156,4 +108,53 @@ public String displayDirectionalCross(Robot robot, int maxDistance) {
     return sb.toString();
 }
 ```
+---
+
+## Refactoring Strategy
+
+### **Step 1: Identify and Extract Responsibilities**
+- Separate grid initialization, cross drawing, obstacle placement, robot placement, and output formatting into distinct helper methods
+- Each helper should encapsulate a single responsibility, reducing nesting and improving readability
+
+### **Step 2: Replace Nested Conditionals with Guard Clauses**
+- Use guard clauses to handle out-of-bounds and irrelevant cases early
+- Flatten the structure to make the main logic more linear and understandable
+
+---
+
+## Refactored Code
+
+```java
+public String displayDirectionalCross(Robot robot, int maxDistance) {
+    //TODO: Write refactored code.
+}
+```
+
+### **Alternative Approach: [Optional Alternative, e.g., Parameterized Tests]**
+```java
+[Insert alternative code structure or pseudocode here]
+```
+
+---
+
+## **Benefits of Refactoring**
+
+### **Maintainability**
+- Each logical step is encapsulated in a well-named helper method
+- Changes to grid, cross, or placement logic are isolated and easier to test
+
+### **Readability**
+- Linear, top-down flow in the main function
+- Reduced cognitive load from deep nesting and repeated index calculations
+
+### **Extensibility**
+- Easy to add new features (e.g., diagonal lines, new symbols) by extending or adding helpers
+- Supports future refactoring and testing
+
+### **Code Quality**
+- Eliminates "Bumpy Road" anti-pattern
+- Follows Single Responsibility Principle
+- Reduces risk of feature entanglement and state management bugs
+
+---
 

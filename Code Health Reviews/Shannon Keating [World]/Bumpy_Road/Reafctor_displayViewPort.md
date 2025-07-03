@@ -8,6 +8,11 @@
 
 ---
 
+## **Before refactoring**
+```java
+[Provide original code]
+```
+
 ## Refactoring Strategy
 
 ### **Step 1: [First Refactoring Step]**

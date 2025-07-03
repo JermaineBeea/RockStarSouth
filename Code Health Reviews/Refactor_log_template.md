@@ -10,7 +10,7 @@
 
 ## **Before refactoring**
 ```java
--[Provide original code]
+[Provide original code]
 ```
 
 ## Refactoring Strategy

@@ -1,6 +1,6 @@
 # Code Refactoring Analysis
 
-## **Hotspot: Bumpy Road in `handleFire`**
+## **Hotspot #3: Bumpy Road in `handleFire`**
 - **Issue:** Deeply nested conditional logic ("Bumpy Road")
 - **Complexity:** High
 - **Problems:**
@@ -8,29 +8,6 @@
   - Several responsibilities (validation, direction/range calculation, hit detection, response building) handled in a single function
   - Difficult to follow due to repeated checks and state changes
   - Hard to test and maintain; adding new fire logic or robot types risks breaking unrelated logic
-
----
-
-## Refactoring Strategy
-
-### **Step 1: Identify and Extract Responsibilities**
-- Separate validation, direction/range calculation, hit detection, and response construction into helper methods
-- Each helper should encapsulate a single responsibility, reducing nesting and improving readability
-
-### **Step 2: Use Guard Clauses for Validation**
-- Use guard clauses to handle invalid states early and return immediately
-- Flatten the structure to make the main logic more linear and understandable
-
----
-
-## Refactored Code
-
-```java
-private void handleFire(Robot robot, CompletionHandler completionHandler) {
-    //TODO: Refactor the function.
-}
-```
-
 ---
 
 ## **Before Refactoring**
@@ -150,6 +127,28 @@ private void handleFire(Robot robot, CompletionHandler completionHandler) {
 }
 ```
 
+---
+
+
+## Refactoring Strategy
+
+### **Step 1: Identify and Extract Responsibilities**
+- Separate validation, direction/range calculation, hit detection, and response construction into helper methods
+- Each helper should encapsulate a single responsibility, reducing nesting and improving readability
+
+### **Step 2: Use Guard Clauses for Validation**
+- Use guard clauses to handle invalid states early and return immediately
+- Flatten the structure to make the main logic more linear and understandable
+
+---
+
+## Refactored Code
+
+```java
+private void handleFire(Robot robot, CompletionHandler completionHandler) {
+    //TODO: Implement refactored code
+}
+```
 ---
 
 ## **Benefits of Refactoring**
