@@ -1,6 +1,6 @@
 # Code Refactoring Analysis
 
-## **Hotspot #1: Command Test**
+## **Hotspot: Command Test**
 - **Issue:** Duplicated code and hardcoded test logic
 - **Complexity:** 8 (High)
 - **Problems:** 

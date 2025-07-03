@@ -1,7 +1,6 @@
 # Code Refactoring Analysis
 
 ## **Hotspot: Bumpy Road in `displayDirectionalCross`**
--[link to HotSpot](https://codescene.wethinkco.de/192/analyses/2118/code/hotspots/biomarkers?name=brownfields_robot_worlds_5%2Fsrc%2Fmain%2Fjava%2Fza%2Fco%2Fwethinkcode%2Frobots%2Fserver%2FWorld.java)
 - **Issue:** Deeply nested conditional logic ("Bumpy Road")
 - **Complexity:** 9 (Very High)
 - **Problems:**
