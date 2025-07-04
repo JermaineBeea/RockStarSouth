@@ -1,14 +1,14 @@
 # Code Analysis Report
 
-## [Component/Class/Module] Refactoring
+## [Test/Module/Class] Refactoring
 
 ### Project Overview
 
 - **Project:** [Project Name]
 - **Analysis Date:** [Month Year]
-- **Files Analyzed:** [Number and type of files]
-- **Lines of Code (Section):** [Line count] (before refactoring)
-- **Main Functionality:** [Brief description of what is being tested/analyzed]
+- **Files Analyzed:** [Number and type of files/classes]
+- **Lines of Code (Test Section):** [Line count before refactoring]
+- **Main Functionality:** [Brief description of what is being tested or implemented]
 
 ---
 
@@ -18,30 +18,23 @@
 
 | Metric                | Value (Before) | Threshold | Status      |
 |-----------------------|---------------|-----------|-------------|
-| Cyclomatic Complexity | [Value]       | [Limit]   | [PASS/FAIL] |
-| Method Length         | [Value]       | [Limit]   | [PASS/FAIL] |
-| Code Duplication      | [Value]       | [Limit]   | [PASS/FAIL] |
-| Maintainability       | [Value]       | [Limit]   | [PASS/FAIL] |
+| Cyclomatic Complexity | [X]           | ≤ [Y]     | [✅/❌]      |
+| Method Length         | [X] lines     | ≤ [Y]     | [✅/❌]      |
+| Code Duplication      | [X] blocks    | 0         | [✅/❌]      |
+| Test Maintainability  | [Low/High]    | High      | [✅/❌]      |
 
 ---
 
 ### Top 3 Problems Identified
 
-**[Problem 1: Short Title]**  
-- **Issue:** [Description]  
-- **Complexity:** [Value/Level]  
-- **Problems:**  
-  - [List of issues]
+**[Problem 1 Title]**  
+- **Issue:** [Description of the problem, symptoms, and risks]
 
-**[Problem 2: Short Title]**  
-- **Issue:** [Description]  
-- **Problems:**  
-  - [List of issues]
+**[Problem 2 Title]**  
+- **Issue:** [Description]
 
-**[Problem 3: Short Title]**  
-- **Issue:** [Description]  
-- **Problems:**  
-  - [List of issues]
+**[Problem 3 Title]**  
+- **Issue:** [Description]
 
 ---
 
@@ -50,6 +43,18 @@
 - **[Smell 1]:** [Description]
 - **[Smell 2]:** [Description]
 - **[Smell 3]:** [Description]
+
+---
+
+## Behavioural Code Analysis
+
+Behavioural code analysis examines both the structure of the code and its version control history to identify trends, risks, and hotspots in the codebase. Key findings for this project:
+
+- **Complexity Hotspots:** [Description]
+- **Change Frequency:** [Description]
+- **Ownership Risk:** [Description]
+- **Delivery Risk:** [Description]
+- **Trend:** [Description]
 
 ---
 
@@ -63,10 +68,10 @@
 
 ## Refactoring Strategy
 
-### Step 1: [First Refactoring Step]
+### Step 1: [First Step]
 - [Description]
 
-### Step 2: [Second Refactoring Step]
+### Step 2: [Second Step]
 - [Description]
 
 ---
@@ -77,10 +82,10 @@
 [Paste refactored code snippet here]
 ```
 
-#### (Optional) [Alternative/Parameterized Version]
+#### (Optional) [Framework/Tool] Parameterized Version
 
 ```[language]
-[Paste alternative/parameterized code snippet here]
+[Paste parameterized/alternative code snippet here]
 ```
 
 ---
@@ -89,10 +94,10 @@
 
 | Metric                | Before         | After         | Improvement         |
 |-----------------------|---------------|---------------|---------------------|
-| Cyclomatic Complexity | [Value]       | [Value]       | [Improvement]       |
-| Method Length         | [Value]       | [Value]       | [Improvement]       |
-| Code Duplication      | [Value]       | [Value]       | [Improvement]       |
-| Maintainability       | [Value]       | [Value]       | [Improvement]       |
+| Cyclomatic Complexity | [X]           | [Y]           | [Description]       |
+| Method Length         | [X] lines     | [Y] lines     | [Description]       |
+| Code Duplication      | [X] blocks    | [Y]           | [Description]       |
+| Test Maintainability  | [Low/High]    | [Low/High]    | [Description]       |
 
 ---
 
@@ -108,18 +113,18 @@
 ## Testing Impact
 
 **Before Refactoring:**  
-- [List of issues]
+- [List pain points]
 
 **After Refactoring:**  
-- [List of improvements]
+- [List improvements]
 
 ---
 
 ## Recommendations
 
-- [General recommendation 1]
-- [General recommendation 2]
-- [General recommendation 3]
+- [Recommendation 1]
+- [Recommendation 2]
+- [Recommendation 3]
 
 ---
 
