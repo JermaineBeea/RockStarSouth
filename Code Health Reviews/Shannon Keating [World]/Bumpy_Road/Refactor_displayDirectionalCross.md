@@ -1,51 +1,132 @@
-# Code Refactoring Analysis
+# Code Analysis Report
 
-## **Hotspot #1: [Describe Area Needing Refactor]**
-- **Issue:** [Summarize the main code smell or problem]
-- **Complexity:** [Estimate: Low/Medium/High or numeric]
-- **Problems:** 
-  - [List specific issues, e.g., duplicated code, hardcoded logic, poor maintainability, etc.]
+## [Component/Class/Module] Refactoring
+
+### Project Overview
+
+- **Project:** [Project Name]
+- **Analysis Date:** [Month Year]
+- **Files Analyzed:** [Number and type of files]
+- **Lines of Code (Section):** [Line count] (before refactoring)
+- **Main Functionality:** [Brief description of what is being tested/analyzed]
 
 ---
 
-## **Before refactoring**
-```java
-[Provide original code]
+## Static Code Analysis Results
+
+### Key Metrics
+
+| Metric                | Value (Before) | Threshold | Status      |
+|-----------------------|---------------|-----------|-------------|
+| Cyclomatic Complexity | [Value]       | [Limit]   | [PASS/FAIL] |
+| Method Length         | [Value]       | [Limit]   | [PASS/FAIL] |
+| Code Duplication      | [Value]       | [Limit]   | [PASS/FAIL] |
+| Maintainability       | [Value]       | [Limit]   | [PASS/FAIL] |
+
+---
+
+### Top 3 Problems Identified
+
+**[Problem 1: Short Title]**  
+- **Issue:** [Description]  
+- **Complexity:** [Value/Level]  
+- **Problems:**  
+  - [List of issues]
+
+**[Problem 2: Short Title]**  
+- **Issue:** [Description]  
+- **Problems:**  
+  - [List of issues]
+
+**[Problem 3: Short Title]**  
+- **Issue:** [Description]  
+- **Problems:**  
+  - [List of issues]
+
+---
+
+## Code Smells Detected
+
+- **[Smell 1]:** [Description]
+- **[Smell 2]:** [Description]
+- **[Smell 3]:** [Description]
+
+---
+
+## Original Code (Before Refactoring)
+
+```[language]
+[Paste relevant code snippet here]
 ```
+
+---
 
 ## Refactoring Strategy
 
-### **Step 1: [First Refactoring Step]**
-- [Describe the first step, e.g., extract common logic, introduce helper methods, etc.]
+### Step 1: [First Refactoring Step]
+- [Description]
 
-### **Step 2: [Second Refactoring Step]**
-- [Describe the next step, e.g., implement parameterization, data-driven testing, etc.]
+### Step 2: [Second Refactoring Step]
+- [Description]
 
 ---
 
 ## Refactored Code
 
-```java
-[Insert refactored code or pseudocode here, focusing on structure, not implementation details]
+```[language]
+[Paste refactored code snippet here]
 ```
 
-### **Alternative Approach: [Optional Alternative, e.g., Parameterized Tests]**
-```java
-[Insert alternative code structure or pseudocode here]
+#### (Optional) [Alternative/Parameterized Version]
+
+```[language]
+[Paste alternative/parameterized code snippet here]
 ```
 
 ---
 
-## **Benefits of Refactoring**
+## Results After Refactoring
 
-### **Maintainability**
-- [Describe maintainability improvements]
+| Metric                | Before         | After         | Improvement         |
+|-----------------------|---------------|---------------|---------------------|
+| Cyclomatic Complexity | [Value]       | [Value]       | [Improvement]       |
+| Method Length         | [Value]       | [Value]       | [Improvement]       |
+| Code Duplication      | [Value]       | [Value]       | [Improvement]       |
+| Maintainability       | [Value]       | [Value]       | [Improvement]       |
 
-### **Readability**
-- [Describe readability improvements]
+---
 
-### **Extensibility**
-- [Describe extensibility improvements]
+## Benefits Achieved
 
-### **Code Quality**
-- [Describe code quality improvements]
+- **Maintainability:** [Description]
+- **Readability:** [Description]
+- **Extensibility:** [Description]
+- **Testability:** [Description]
+
+---
+
+## Testing Impact
+
+**Before Refactoring:**  
+- [List of issues]
+
+**After Refactoring:**  
+- [List of improvements]
+
+---
+
+## Recommendations
+
+- [General recommendation 1]
+- [General recommendation 2]
+- [General recommendation 3]
+
+---
+
+## Key Learnings
+
+- [Learning 1]
+- [Learning 2]
+- [Learning 3]
+
+---
