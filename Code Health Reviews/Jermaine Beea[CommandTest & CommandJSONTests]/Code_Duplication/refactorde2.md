@@ -25,9 +25,9 @@
 
 ---
 
-### Top 3 Hotspots Identified
+### Top 3 Problem Identified
 
-🔥 **Hotspot #1: Duplicated Test Logic**  
+🔥 **Duplicated Test Logic**  
 - **Issue:** Nearly identical test methods for left and right turns  
 - **Complexity:** 8 (High)  
 - **Problems:**  
@@ -35,14 +35,14 @@
   - Only direction and expected result differ  
   - Hard to add new directions or change logic
 
-🔥 **Hotspot #2: Hardcoded Assertions**  
+🔥 **Hardcoded Assertions**  
 - **Issue:** Assertions are tightly coupled to test data  
 - **Problems:**  
   - Test logic not parameterized  
   - Adding new cases requires copy-paste  
   - Increases risk of inconsistent tests
 
-🔥 **Hotspot #3: Poor Maintainability**  
+🔥 **Poor Maintainability**  
 - **Issue:** Changes require edits in multiple places  
 - **Problems:**  
   - Difficult to update test logic  
@@ -232,6 +232,3 @@ public void testTurnDirection(String direction, String expectedDirection, String
 
 ---
 
-## Identify Three Hotspots Sections
-
-<!-- Leave this section for further analysis as requested -->
