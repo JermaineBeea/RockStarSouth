@@ -59,6 +59,20 @@
 
 ---
 
+## Behavioural Code Analysis
+
+Behavioural code analysis examines both the structure of the code and its version control history to identify trends, risks, and hotspots in the codebase. Key findings for this project:
+
+- **Complexity Hotspots:** The turn command test methods were the most complex and duplicated parts of the test suite, as shown by their high cyclomatic complexity and frequent changes.
+- **Change Frequency:** The turn command tests have been modified multiple times in the last six months, mostly to add new directions or fix assertion errors. This indicates these tests are a maintenance hotspot.
+- **Ownership Risk:** Most changes to these test methods were made by a single developer, increasing the risk that knowledge about this part of the codebase is siloed.
+- **Delivery Risk:** If a new branch is created for additional robot commands or directions, the duplicated and complex test logic could increase merge conflicts and delivery risk.
+- **Trend:** The trend before refactoring was toward increasing duplication and complexity. After refactoring, the code is more maintainable and less risky to change.
+
+This analysis suggests that refactoring duplicated and complex test logic not only improves code quality but also reduces delivery and knowledge risks in the project.
+
+---
+
 ## Original Code (Before Refactoring)
 
 ```java
